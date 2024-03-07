@@ -1,0 +1,51 @@
+<div class="row">
+        <div class="table-responsive">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-8"><h2>Upload Details</h2></div>
+                       
+                    </div>
+                </div>
+                <table class="table table-bordered">
+                      
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Train file count</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let row of rows; let i = index">
+                            <td>{{fileName}}</td>
+                            <td>0</td>
+                            <td>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="nav-icon fas fa-edit">&#xE254;</i></a>
+                            </td>
+                            <td>
+                                <a class="delete" title="Delete" (click) = "deleteRow(i)"  data-toggle="tooltip"><i class="nav-icon fas fa-trash">&#xE872;</i></a>
+                            </td>
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+ </div>
+ 
+<div class="container">
+  <h1>Add Project</h1>
+<div class="row" style="margin-left: 50px;">
+    <div class="col-10">
+        <div
+        class="card bg-faded p-3 text-center mb-3 my-drop-zone">
+        <i class="fa fa-upload fa-3x"></i> 
+        Drop photo here 
+    </div>
+    <div class="inline-block">
+    <input id="upload_file" type="file" #file />
+    <a class="btn btn-sm btn-info" (click)="onAddRowClick(file)" >Upload</a>
+    </div>
+</div>
+  </div>

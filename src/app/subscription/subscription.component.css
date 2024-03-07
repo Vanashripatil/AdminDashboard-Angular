@@ -1,0 +1,83 @@
+.subscribe {
+    color: #313437;
+    background-color: #ffffff;
+    padding: 55px 74px
+}
+
+.subscribe p {
+    color: #7d8285;
+    line-height: 1.5
+}
+
+.subscribe h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    padding-top: 0;
+    margin-top: 0;
+    color: inherit
+}
+
+.subscribe .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 25px
+}
+
+.subscribe .intro p {
+    margin-bottom: 35px
+}
+
+.subscribe form {
+    justify-content: center
+}
+
+.subscribe form .form-control {
+    background: #eff1f4;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 9px;
+    height: 45px;
+    margin-right: 10px;
+    min-width: 250px
+}
+
+.subscribe form .btn {
+    padding: 16px 32px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    line-height: 1
+}
+
+.subscribe form .btn:hover {
+    opacity: 1
+}
+
+.subscribe form .btn:active {
+    transform: translateY(1px)
+}
+
+.subscribe form .btn-primary {
+    background-color: #055ada !important;
+    color: #fff;
+    outline: none !important
+}
+
+body {
+    background: #eee
+}
+
+.newsletter {
+    color: #0062cc !important
+}
